@@ -46,9 +46,9 @@ export function Home() {
   function handleFilterLoginData() {
     // Filter results inside data, save with setSearchListData
     if (searchText) {
-      const dataFiltered = data.filter((password) => {
-        password.service_name.indexOf(searchText) !== -1;
-      });
+      const dataFiltered = data.filter(
+        (password) => password.service_name.indexOf(searchText) !== -1
+      );
 
       setSearchListData(dataFiltered);
     } else {
